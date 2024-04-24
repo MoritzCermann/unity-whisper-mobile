@@ -16,14 +16,18 @@ On Android and WebGL platforms, you cannot access files in the `StreamingAssets`
 
 ### Error
 
-At the time of writing i choose a workaround because loading the model got me an error: “Error Unable to Load type Unity.Sentis.Layers.Gather required for deserialisation”. What i did is exactly what i described in **Setup**. I basically but the models in the Asset/Models folder instead of the StreamingAsset folder.
+At the time of writing i choose a workaround because loading the model got me an error: “Error Unable to Load type Unity.Sentis.Layers.Gather required for deserialisation”. What i did is exactly what i described in **Setup**. I basically put the models in the Asset/Models folder instead of the StreamingAsset folder.
 
 For more detailed information on this challenge and possible workaround approaches, refer to this [forum post](https://discussions.unity.com/t/does-sentis-work-on-android-mobile/346403/5).
+And this [forum post](https://discussions.unity.com/t/loading-asset-in-android-using-streamingassets-and-unitywebrequest/231278/2).
 
-## Requirements
+## Requirements / Versions
 
 - Unity 2023.2.1f1
 - Sentis 1.3.0-pre
+
+## Note:
+You might want to change the Backendtype inside `RunWhisper.cs` depending on your device. 
 
 ## Tested On
 
