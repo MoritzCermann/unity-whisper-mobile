@@ -13,7 +13,7 @@ public class RunWhisper : MonoBehaviour
 {
     IWorker decoderEngine, encoderEngine, spectroEngine;
 
-    const BackendType backend = BackendType.GPUCompute;
+    const BackendType backend = BackendType.CPU;
 
     // Link your audioclip here. Format must be 16Hz mono non-compressed.
     public AudioClip audioClip;
