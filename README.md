@@ -5,8 +5,8 @@ A Unity project that utilizes [unity/sentis-whisper-tiny](https://huggingface.co
 ## Setup
 
 1. **Download Models**: Download `AudioDecoder_Tiny.sentis`, `AudioEncoder_Tiny.sentis`, and `LogMelSepctro.sentis`.
-2. **Add Models**: In the `/Assets` directory, create a folder named `Models` and place the downloaded models there.
-3. **Assign Models**: In the Inspector, assign these models to the `RunWhisper` script.
+2. **Add Models**: In the `/Assets` directory, place the downloaded models inside the `Models` folder.
+3. **Assign Models**: In the Inspector, assign these 3 models to the `RunWhisper` script.
 
 Ideally, you should store these models in the `StreamingAssets` folder and load them at runtime. However, accessing the `StreamingAssets` folder on Android and WebGL platforms is not as straightforward as on other platforms (e.g., you cannot access them directly via `Application.streamingAssetsPath + "/AudioDecoder_Tiny.sentis"`).
 
